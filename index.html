@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Per te ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+      color: #5a2638;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    .pagina {
+      min-height: 100vh;
+      padding: 70px 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 19px;
+      line-height: 1.7;
+      max-width: 600px;
+    }
+
+    .cuore {
+      font-size: 70px;
+      animation: battito 1.5s infinite;
+    }
+
+    button {
+      margin-top: 25px;
+      padding: 15px 28px;
+      border: none;
+      border-radius: 30px;
+      background: #d94f76;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px #d94f7644;
+    }
+
+    button:hover {
+      background: #bd3d62;
+    }
+
+    .motivo {
+      background: #ffffffaa;
+      margin: 15px;
+      padding: 22px;
+      border-radius: 20px;
+      max-width: 500px;
+      box-shadow: 0 5px 20px #9b536622;
+    }
+
+    .numero {
+      font-size: 14px;
+      color: #c43e68;
+      font-weight: bold;
+    }
+
+    .finale {
+      font-size: 25px;
+      font-weight: bold;
+    }
+
+    @keyframes battito {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.15); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="pagina">
+    <div class="cuore">♡</div>
+
+    <h1>Per te</h1>
+
+    <p>
+      Ho creato questo piccolo posto su internet
+      solo per te.
+    </p>
+
+    <p>
+      Perché oggi è il tuo compleanno,
+      ma io voglio festeggiare soprattutto
+      la persona speciale che sei.
+    </p>
+
+    <button onclick="vaiAiMotivi()">Apri il mio regalo ♡</button>
+  </section>
+
+
+  <section class="pagina" id="motivi">
+    <h2>Alcuni motivi per cui sei speciale ❤️</h2>
+
+    <div class="motivo">
+      <div class="numero">01 ♡</div>
+      <p>Perché riesci a farmi sorridere anche nei giorni più difficili.</p>
+    </div>
+
+    <div class="motivo">
+      <div class="numero">02 ♡</div>
+      <p>Perché con te posso essere completamente me stessa.</p>
+    </div>
+
+    <div class="motivo">
+      <div class="numero">03 ♡</div>
+      <p>Perché amo il tuo sorriso.</p>
+    </div>
+
+    <div class="motivo">
+      <div class="numero">04 ♡</div>
+      <p>Perché anche i momenti più semplici con te diventano speciali.</p>
+    </div>
+
+    <div class="motivo">
+      <div class="numero">05 ♡</div>
+      <p>Perché sei riuscito a diventare una persona importantissima per me.</p>
+    </div>
+
+    <div class="motivo">
+      <div class="numero">06 ♡</div>
+      <p>Perché amo il modo in cui ti prendi cura delle persone che ami.</p>
+    </div>
+
+    <div class="motivo">
+      <div class="numero">07 ♡</div>
+      <p>Perché riesci a farmi ridere anche quando non ne ho voglia.</p>
+    </div>
+
+    <div class="motivo">
+      <div class="numero">08 ♡</div>
+      <p>Perché sei semplicemente tu. E per me questo vale tantissimo.</p>
+    </div>
+
+    <div class="motivo">
+      <div class="numero">09 ♡</div>
+      <p>Per tutte le piccole cose che fai e che forse non sai nemmeno quanto significano per me.</p>
+    </div>
+
+    <div class="motivo">
+      <div class="numero">10 ♡</div>
+      <p>Perché non mi basterebbero mille motivi per spiegarti quanto sei speciale.</p>
+    </div>
+
+    <div class="motivo">
+      <div class="numero">♡</div>
+      <p class="finale">
+        E soprattutto...
+        <br><br>
+        Buon compleanno, amore mio. ❤️
+        <br><br>
+        Ti amo.
+      </p>
+    </div>
+  </section>
+
+
+  <script>
+    function vaiAiMotivi() {
+      document.getElementById("motivi").scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+  </script>
+
+</body>
+</html>
